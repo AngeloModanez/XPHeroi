@@ -1,6 +1,6 @@
 const readlineSync = require('readline-sync');
 
-let name = readlineSync.question('\nDigite o nome do Heroi: ');
+let hero = readlineSync.question('\nDigite o nome do Heroi: ');
 let xp = parseInt(readlineSync.question('\nDigite sua quantidade de XP: '));
 
 var level;
@@ -30,8 +30,6 @@ switch (true) {
     case (xp >= 10001):
         level = "Radiante";
         break;
-    default:
-        level = "Nível inválido";
 }
 
-console.log(`\nO Herói ${name} está no nível ${level}`);
+console.log(`\nO Herói ${hero} está no nível ${level}`);
